@@ -7,52 +7,51 @@
     <title>Paint Application</title>
     <link rel="icon" href="./img/logo.png" type="image/x-icon" />
     <style>
-
-        #content{
-            padding-left: 740px;
-           
-        }
-        #myCanvas{
-          background-color: #FBE4E6;
-          box-shadow: inset 0 0 5px #b6b6b6; 
-          backdrop-filter: blur(15px);
-          border-radius: 2px;
-          border: 5px solid #EB7A81;
-        }
-        #buttonstyle{
-          background-color: #FDF5F5;
-          border: 2px solid #EB7A81;
-          border-radius: 5px;
-          color: black;
-          padding: 15px 32px;
-          text-align: center;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-        #buttonstyle:hover{
-            background-color:#ffffff36;
-            transition: 0.5s;
-        }
-        #bgimg{
-            background-image: url(./paintimg.png);
-        }
-        #shooky{
-            border: 2px solid #ffffff;
-            border-radius: 25px;
-            padding: 25px 25px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        #shooky:hover{
-            opacity: 20%;
-            transition: 0.21s;
-        }
-        </style>
+      #content{
+    padding-left: 740px;
+   
+}
+#myCanvas{
+  background-color: #FBE4E6;
+  box-shadow: inset 0 0 5px #b6b6b6; 
+  backdrop-filter: blur(15px);
+  border-radius: 2px;
+  border: 5px solid #EB7A81;
+}
+#buttonstyle{
+  background-color: #FDF5F5;
+  border: 2px solid #EB7A81;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#buttonstyle:hover{
+    background-color:#ffffff36;
+    transition: 0.5s;
+}
+#bgimg{
+    background-image: url(./paintimg.png);
+}
+#shooky{
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding: 25px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#shooky:hover{
+    opacity: 20%;
+    transition: 0.21s;
+}
+    </style>
   </head>
   <body id="bgimg">
     <div id="content">
@@ -80,10 +79,7 @@
       <button onclick="change_color(this)" id="shooky" style="background: rgb(54, 0, 124);"></button>
       <button onclick="change_color(this)" id="shooky" style="background: rgb(0, 0, 0);"></button>
       </center>
-
       <script>
-
-
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
         ctx.fillStyle = "#FF0000";
